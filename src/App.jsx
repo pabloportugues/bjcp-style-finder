@@ -75,6 +75,7 @@ function App() {
         <div className="app-container">
 
             <header>
+                <div className="header-credits">credit <a href="https://www.linkedin.com/in/pabloportugues">@pabloportugues</a></div>
                 <div className="header-content">
                     <img src={beerGlass} className="beer-logo" alt="Beer Glass" />
                     <h1>Beer <span>Style Finder</span></h1>

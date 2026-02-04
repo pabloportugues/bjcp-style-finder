@@ -29,6 +29,15 @@ header {
     align-items: center;
 }
 
+.header-credits {
+    align-self: flex-end;
+    flex-direction: column;
+    position: relative;
+    font-size: 1rem;
+    color: var(--color-muted);
+    font-weight: 400;
+}
+
 .header-content {
     display: flex;
     flex-direction: column;
