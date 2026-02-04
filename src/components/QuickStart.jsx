@@ -6,7 +6,7 @@ export function QuickStart({ onSelect }) {
         { label: "Light & Refreshing", query: "American Light Lager" },
         { label: "Coffee Notes", query: "coffee roast" },
         { label: "Spicy Wheat", query: "Weissbier" },
-        { label: "Bitter IPA", query: "IPA bitter" },
+        { label: "Fruity", query: "Fruity" },
         { label: "Dark & Malty", query: "complex dark malt" }
     ];
 
