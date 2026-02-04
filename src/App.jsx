@@ -17,7 +17,11 @@ function App() {
     const [error, setError] = useState(null);
 
     useEffect(() => {
-        fetch('/src/data/bjcp_2021.json')
+        // Use BASE_URL to handle GitHub Pages subpath
+        const baseUrl = import.meta.env.BASE_URL;
+        const dataPath = `${baseUrl}data/bjcp_2021.json`.replace('//', '/');
+
+        fetch(dataPath)
             .then(res => res.json())
             .then(data => {
                 let loadedStyles = [];
@@ -73,8 +77,8 @@ function App() {
             <header>
                 <div className="header-content">
                     <img src={beerGlass} className="beer-logo" alt="Beer Glass" />
-                    <h1>BJCP <span>Style Finder</span></h1>
-                    <p className="subtitle">Discover beer styles based on your own preferences</p>
+                    <h1>Beer <span>Style Finder</span></h1>
+                    <p className="subtitle">Discover beer styles based on your preferences</p>
                 </div>
             </header>
 

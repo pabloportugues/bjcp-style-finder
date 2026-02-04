@@ -19,7 +19,7 @@
 }
 
 header {
-    margin: 4rem 0 3rem;
+    margin: 4rem 0 0;
     text-align: center;
     position: relative;
     z-index: 10;
@@ -37,7 +37,7 @@ header {
 }
 
 .beer-logo {
-    height: 80px;
+    height: 140px;
     width: auto;
     margin-bottom: 1rem;
     filter: drop-shadow(0 4px 6px rgba(215, 127, 0, 0.2));
