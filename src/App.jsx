@@ -74,7 +74,7 @@ function App() {
                 <div className="header-content">
                     <img src={beerGlass} className="beer-logo" alt="Beer Glass" />
                     <h1>BJCP <span>Style Finder</span></h1>
-                    <p className="subtitle">Discover beer styles based on your preferences</p>
+                    <p className="subtitle">Discover beer styles based on your own preferences</p>
                 </div>
             </header>
 
