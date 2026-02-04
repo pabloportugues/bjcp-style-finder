@@ -1,0 +1,57 @@
+:root {
+  /* Beer Theme Palette */
+  --color-bg: #FDFBF7;
+  /* Soft Cream / Foam text */
+  --color-text: #2D241E;
+  /* Dark Stout Brown */
+  --color-primary: #D77F00;
+  /* Rich Amber */
+  --color-primary-dark: #BF5D03;
+  /* Darker Amber/Copper */
+  --color-secondary: #5C8001;
+  /* Fresh Hop Green */
+  --color-accent: #F6C101;
+  /* Golden Beer */
+  --color-surface: #FFFFFF;
+  --color-border: #E6E1D6;
+  --color-muted: #8C857B;
+
+  --shadow-sm: 0 1px 2px rgba(45, 36, 30, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(45, 36, 30, 0.1), 0 2px 4px -1px rgba(45, 36, 30, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(45, 36, 30, 0.1), 0 4px 6px -2px rgba(45, 36, 30, 0.05);
+
+  --radius-md: 0.5rem;
+  --radius-lg: 1rem;
+
+  /* SRM Colors - to be expanded dynamically */
+  --srm-straw: #F8F753;
+  --srm-gold: #F6C101;
+  --srm-amber: #D77F00;
+  --srm-copper: #BF5D03;
+  --srm-brown: #8D4C32;
+  --srm-dark: #361F1B;
+  --srm-black: #1A1A1A;
+}
+
+body {
+  margin: 0;
+  font-family: 'Outfit', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  /* Lively ingredients background */
+  background-color: var(--color-bg);
+  background-image:
+    linear-gradient(rgba(253, 251, 247, 0.85), rgba(253, 251, 247, 0.85)),
+    /* Soft overlay for readability */
+    url('/src/assets/beer_ingredients_pattern.png');
+  background-size: auto, 400px;
+  background-repeat: no-repeat, repeat;
+  background-attachment: fixed;
+
+  color: var(--color-text);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+* {
+  box-sizing: border-box;
+}

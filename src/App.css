@@ -1,0 +1,133 @@
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow-x: hidden;
+}
+
+.search-prompt {
+    font-size: 1.5rem;
+    color: var(--color-primary-dark);
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: 600;
+}
+
+header {
+    margin: 4rem 0 3rem;
+    text-align: center;
+    position: relative;
+    z-index: 10;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.header-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.beer-logo {
+    height: 80px;
+    width: auto;
+    margin-bottom: 1rem;
+    filter: drop-shadow(0 4px 6px rgba(215, 127, 0, 0.2));
+}
+
+h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    letter-spacing: -0.03em;
+    color: var(--color-text);
+    margin: 0;
+    line-height: 1;
+}
+
+h1 span {
+    color: var(--color-primary);
+}
+
+.subtitle {
+    font-size: 1.25rem;
+    color: var(--color-muted);
+    font-weight: 400;
+    margin-top: 1rem;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    z-index: 10;
+    padding-bottom: 4rem;
+}
+
+/* Decorative background elements */
+.hops-decoration {
+    position: fixed;
+    top: -50px;
+    right: -50px;
+    width: 300px;
+    opacity: 0.1;
+    z-index: 0;
+    pointer-events: none;
+    transform: rotate(15deg);
+}
+
+.hops-decoration.bottom-left {
+    top: auto;
+    right: auto;
+    bottom: -50px;
+    left: -50px;
+    transform: rotate(-165deg);
+}
+
+.results-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.no-results {
+    text-align: center;
+    color: var(--color-muted);
+    font-size: 1.1rem;
+    margin-top: 2rem;
+    padding: 3rem;
+    background: var(--color-surface);
+    border-radius: var(--radius-lg);
+    border: 1px dashed var(--color-border);
+}
+
+.loading-state,
+.error-state {
+    text-align: center;
+    padding: 2rem;
+    color: var(--color-muted);
+}
+
+.error-state {
+    color: #e53935;
+    background: #ffebee;
+    border-radius: var(--radius-md);
+}
+
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    header {
+        margin: 2rem 0;
+    }
+}
